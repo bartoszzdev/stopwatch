@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(226, 173, 27);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 55px 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#timer {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff
+}
+
+.btn {
+    padding: 12px 50px;
+    margin: 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    cursor: pointer
+}
+
+.btn:hover {
+    color:rgb(226, 173, 27);
+    background-color: #fff;
+    transition: 400ms ease-in
+}
