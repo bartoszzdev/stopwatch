@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
 body {
     display: flex;
     flex-direction: column;
@@ -51,4 +49,16 @@ body {
     color:rgb(226, 173, 27);
     background-color: #fff;
     transition: 400ms ease-in
+}
+
+@media only screen and (max-width: 620px) {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        margin: 20px 40px
+    }
 }

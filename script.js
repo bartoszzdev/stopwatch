@@ -1,6 +1,8 @@
 const startBtn = document.getElementById("start")
 const stopBtn = document.getElementById("stop")
 const resetBtn = document.getElementById("reset")
+const secItem = document.getElementById("seconds")
+const milisecItem = document.getElementById("miliseconds")
 let sec = 0
 let milisec = 0
 let interval
@@ -10,10 +12,19 @@ startBtn.addEventListener("click", () => {
     interval = setInterval(initTimer, 10)
 })
 
-function initTimer() {
-    const secItem = document.getElementById("seconds")
-    const milisecItem = document.getElementById("miliseconds")
+stopBtn.addEventListener("click", () => { 
+    clearInterval(interval) 
+})
 
+resetBtn.addEventListener("click", () => {
+    sec = 0
+    milisec = 0
+    clearInterval(interval)
+    secItem.textContent = "00"
+    milisecItem.textContent = "00"
+})
+
+function initTimer() {
     milisec += 0.01
     let milisecStr = milisec.toFixed(2)
 
