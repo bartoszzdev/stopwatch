@@ -7,3 +7,5 @@
 
 - A stopwatch project, hope you like it, any suggestion please send me!
 - I worked with HTML, CSS and JavaScript technologies.
+
+Confira o projeto de perto / Acess the project itself: https://bartoszzdev.github.io/stopwatch/
